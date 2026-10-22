@@ -140,3 +140,15 @@ document.querySelector("#clear-cart").addEventListener("click", function () {
   updateCart();
 });
 
+updateCart();
+document.querySelector("#checkout").addEventListener("click", function () {
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    alert("Order confirmed successfully! Good luck .");
+
+    cart = [];
+    updateCart();
+});
