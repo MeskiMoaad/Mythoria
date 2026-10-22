@@ -4,15 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" href="stylish.css">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 	<title>Mythoria</title>
 </head>
 
 <body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/eclipse.png');">
-	<header class="fixed top-0 left-0 z-50 w-full  flex items-center justify-between px-8 py-4 bg-black/50 border-b border-amber-500/30 ">
+	<header class="fixed top-0 left-0 z-50 w-full  flex items-center justify-between px-8 py-4 bg-black/100 border-b border-amber-500/30 ">
 
 		<a href="index.html" class="flex items-center gap-3">
 			<img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
@@ -49,11 +47,16 @@
     <div class="ml-40 max-w-xl">
 
        <h1 class=" max-w-lg text-5xl font-bold text-amber-400">
-    FORGE YOUR<br>
-    LEGEND
-</h1>
+    FORGE YOUR<br></h1>
+    <h2 class=" max-w-lg text-7xl font-bold text-amber-400">LEGNED</h2>
+	<div class="mt-4 flex items-center gap-2">
+    <div class="h-px w-32 bg-amber-500"></div>
+    <span class="text-amber-400">◇</span>
+    <div class="h-px w-32 bg-amber-500"></div>
+</div>
+
         <p class="mt-6 text-lg">
-            Collect legendary cards. Open mysterious boosters.<br>
+            Collect legendary cards. Open mysterious <br>boosters.
             Build your destiny.
         </p>
 
@@ -74,17 +77,70 @@
 
 
 <section class="px-8 py-16 text-center">
-		<h2 class=" text-5xl font-bold text-amber-400 ">
-			Featured cards
+		<div class="mb-8 flex items-center justify-center gap-4">
 
-		</h2>
+    <div class="h-px w-100 bg-amber-600"></div>
+
+    <span class="text-amber-200">◇</span>
+
+    <h2 class="text-5xl font-bold text-amber-400">
+       Visit the Shop for a Chance at Legendary Cards
+    </h2>
+
+    <span class="text-amber-200">◇</span>
+
+    <div class="h-px w-100 bg-amber-600"></div>
+
+</div>
 		<div class="cards">
-		<div class="flex flex-wrap justify-center items-start gap-4">
- 			 <img src="images/chrollo.png" alt="Chrollo Lucilfer" class="w-110 shrink-0 rounded-xl shadow-2xl">
-  			<img src="images/killua.png"  alt="Killua Zoldyck"  class="w-120 shrink-0 rounded-xl shadow-2xl">
-  			<img src="images/hisoka.png"  alt="Hisoka Morow"    class="w-110 shrink-0 rounded-xl shadow-2xl">
+		<div class="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-5xl mx-auto px-4">
+			<article class="cardes">
+ 		    <img
+                        src="images/Booster pack Troupe fantôme magistrale.png"
+                        alt="Phantom Troupe purple booster pack">
+
+			</article>
+					<article class="cardes">
+						  <img
+                        src="images/Booster pack Heavens Path glacé.png"
+                        alt="Heaven's Path Hunter x Hunter booster pack">
+						
+					</article>
+
+			<article class="cardes">
+				 <img
+                        src="images/Pack booster premium « Le réveil du roi » (1).png"
+                        alt="King's Awakening premium booster pack">
+
+			</article>
+
+			<article class="cardes">
+  			 <img
+                        src="images/Booster pack Hunter’s Journey en forêt.png"
+                        alt="Hunter's Journey green booster pack">
+			</article>
+
 		</div>
 		</div>
+
+</section>
+
+<section class="mx-8 mb-8 flex items-center justify-between overflow-hidden rounded-xl border border-amber-600/60 bg-black/70 px-8 py-6 text-white">
+
+    <div>
+        <h2 class="text-2xl font-bold text-amber-400">
+            YOUR NEXT LEGEND AWAITS
+        </h2>
+
+        <p class="mt-2">
+            Discover powerful cards, rare treasures and build a stronger collection.
+        </p>
+    </div>
+
+    <a href="opening.html"
+       class="shrink-0 rounded-full bg-orange-500 px-6 py-3 font-semibold text-black transition hover:bg-orange-400">
+        Open a Booster →
+    </a>
 
 </section>
 
