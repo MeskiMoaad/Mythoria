@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Mythoria | Booster Shop</title>
+</head>
+
+<body
+    class="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white"
+    style="background-image: url('./images/shopbackground.png');">
+
+    <header
+        class="fixed top-0 left-0 z-50 w-full flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-black/95 border-b border-amber-500/30">
+
+        <a href="index.html" class="flex items-center gap-3">
+            <img
+                src="images/logo.png"
+                alt="Mythoria logo"
+                class="w-10 h-10 object-contain">
+
+            <span class="text-2xl font-bold tracking-widest text-amber-400">
+                MYTHORIA
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm lg:text-base">
+                <li><a href="index.html" class="transition hover:text-amber-400">Home</a></li>
+                <li><a href="shop.html" aria-current="page" class="text-amber-400">Booster Shop</a></li>
+                <li><a href="opening.html" class="transition hover:text-amber-400">Opening Chamber</a></li>
+                <li><a href="grimoire.html" class="transition hover:text-amber-400">My Collection</a></li>
+                <li><a href="deck.html" class="transition hover:text-amber-400">My Deck</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto px-6 pt-32 pb-12">
+
+        <section class="rounded-2xl bg-black/65 px-5 py-8 md:px-8">
+
+            <h1 class="mb-8 text-center text-3xl font-bold tracking-wide text-amber-400 md:text-4xl">
+                Choose Your Booster
+            </h1>
+
+            <div class="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <article class="flex flex-col gap-3 rounded-xl border border-amber-500/30 bg-black/75 p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-400 hover:bg-black/90">
+
+                    <img
+                        src="images/Booster pack Heavens Path glacé.png"
+                        alt="Heaven's Path Hunter x Hunter booster pack"
+                        class="h-80 w-full object-contain">
+
+                    <h2 class="text-xl font-bold text-amber-300">
+                        Heaven's Path
+                    </h2>
+
+                    <p class="text-sm leading-relaxed text-gray-300">
+                        Begin your adventure with this starter pack.
+                    </p>
+
+                    <p class="text-sm text-gray-400">
+                        5 cards
+                    </p>
+
+                    <p class="mt-auto pt-2 text-lg font-bold text-amber-400">
+                        5 coins
+                    </p>
+
+                    <input
+                        type="number"
+                        min="1"
+                        value="1"
+                        aria-label="Beginner Pack quantity"
+                        class="w-20 rounded-lg border border-amber-500/40 bg-black p-2 text-center text-white">
+
+                    <button type="button"
+                        class="w-full cursor-pointer rounded-lg bg-amber-500 px-4 py-3 font-bold text-black transition hover:bg-amber-400">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+                <article class="flex flex-col gap-3 rounded-xl border border-amber-500/30 bg-black/75 p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-400 hover:bg-black/90">
+
+                    <img
+                        src="images/Pack booster premium « Le réveil du roi » (1).png"
+                        alt="King's Awakening premium booster pack"
+                        class="h-80 w-full object-contain">
+
+                    <h2 class="text-xl font-bold text-amber-300">
+                        King's Awakening
+                    </h2>
+
+                    <p class="text-sm leading-relaxed text-gray-300">
+                        Discover powerful characters and legendary abilities.
+                    </p>
+
+                    <p class="text-sm text-gray-400">
+                        5 cards
+                    </p>
+
+                    <p class="mt-auto pt-2 text-lg font-bold text-amber-400">
+                        400 coins
+                    </p>
+
+                    <input
+                        type="number"
+                        min="1"
+                        value="1"
+                        aria-label="King's Awakening quantity"
+                        class="w-20 rounded-lg border border-amber-500/40 bg-black p-2 text-center text-white">
+
+                    <button type="button"
+                        class="w-full cursor-pointer rounded-lg bg-amber-500 px-4 py-3 font-bold text-black transition hover:bg-amber-400">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+                <article class="flex flex-col gap-3 rounded-xl border border-amber-500/30 bg-black/75 p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-400 hover:bg-black/90">
+
+                    <img
+                        src="images/Booster pack Hunter’s Journey en forêt.png"
+                        alt="Hunter's Journey green booster pack"
+                        class="h-80 w-full object-contain">
+
+                    <h2 class="text-xl font-bold text-amber-300">
+                        Hunter's Journey
+                    </h2>
+
+                    <p class="text-sm leading-relaxed text-gray-300">
+                        Join your favorite hunters on a new adventure.
+                    </p>
+
+                    <p class="text-sm text-gray-400">
+                        5 cards
+                    </p>
+
+                    <p class="mt-auto pt-2 text-lg font-bold text-amber-400">
+                        250 coins
+                    </p>
+
+                    <input
+                        type="number"
+                        min="1"
+                        value="1"
+                        aria-label="Hunter's Journey quantity"
+                        class="w-20 rounded-lg border border-amber-500/40 bg-black p-2 text-center text-white">
+
+                    <button type="button"
+                        class="w-full cursor-pointer rounded-lg bg-amber-500 px-4 py-3 font-bold text-black transition hover:bg-amber-400">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+        
+                <article class="flex flex-col gap-3 rounded-xl border border-amber-500/30 bg-black/75 p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-400 hover:bg-black/90">
+
+                    <img
+                        src="images/Booster pack Troupe fantôme magistrale.png"
+                        alt="Phantom Troupe purple booster pack"
+                        class="h-80 w-full object-contain">
+
+                    <h2 class="text-xl font-bold text-amber-300">
+                        Phantom Troupe
+                    </h2>
+
+                    <p class="text-sm leading-relaxed text-gray-300">
+                        Discover the mysterious members of the Phantom Troupe.
+                    </p>
+
+                    <p class="text-sm text-gray-400">
+                        5 cards
+                    </p>
+
+                    <p class="mt-auto pt-2 text-lg font-bold text-amber-400">
+                        300 coins
+                    </p>
+
+                    <input
+                        type="number"
+                        min="1"
+                        value="1"
+                        aria-label="Phantom Troupe quantity"
+                        class="w-20 rounded-lg border border-amber-500/40 bg-black p-2 text-center text-white">
+
+                    <button type="button"
+                        class="w-full cursor-pointer rounded-lg bg-amber-500 px-4 py-3 font-bold text-black transition hover:bg-amber-400">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+            </div>
+
+			
+<div id="cart" class="mt-10 rounded-xl bg-black/80 border border-amber-500/30 p-5">
+
+    <h2 class="text-2xl font-bold text-amber-400 mb-4"> Your Cart</h2>
+
+    <div id="cart-items">Your cart is empty.</div>
+
+    <p class="mt-4 text-xl font-bold">
+        Total: <span id="cart-total" class="text-amber-400">0 coins</span>
+    </p>
+
+    <button id="clear-cart" class="mt-4 rounded bg-red-600 px-4 py-2">
+        Clear Cart
+    </button>
+
+    <button id="checkout" class="ml-2 rounded bg-amber-500 px-4 py-2 text-black">
+        Checkout
+    </button>
+
+</div>
+        </section>
+
+    </main>
+
+</body>
+</html>
