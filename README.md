@@ -34,7 +34,6 @@ Mythoria/
 ├── opening.html
 ├── grimoire.html
 ├── deck.html
-├── stylish.css
 ├── shop.js
 └── images/
 
