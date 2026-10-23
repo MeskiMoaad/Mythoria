@@ -1,0 +1,5 @@
+.home-card :hover{
+    transform: scale(1.6);
+    transition: 0.4s;
+
+}
