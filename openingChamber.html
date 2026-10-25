@@ -4,44 +4,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 	<title>Mythoria</title>
 </head>
 
-<body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/eclipse.png');">
-	<header class="fixed top-0 left-0 z-50 w-full  flex items-center justify-between px-8 py-4 bg-black/100 border-b border-amber-500/30 ">
+<body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/Sanctuaire\ mystique\ aux\ chandelles.png');">
 
-		<a href="index.html" class="flex items-center gap-3">
-			<img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
-			<span class="text-2xl font-bold text-amber-400">
-				MYTHORIA
-			</span>
-		</a>
+	 <header class="fixed top-0 left-0 z-50 w-full flex items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
 
-		<nav aria-label="Main navigation">
-			<ul class="flex items-center gap-8 text-white">
-				<li>
-					<a href="index.html" class="text-amber-400">Home</a>
-				</li>
-				<li>
-					<a href="shop.html" class="hover:text-amber-400">Booster Shop</a>
-				</li>
-				<li>
-					<a href="opening.html" class="hover:text-amber-400">Opening Chamber</a>
-				</li>
-				<li>
-					<a href="grimoire.html" class="hover:text-amber-400">My Collection</a>
-				</li>
-				<li>
-					<a href="deck.html" class="hover:text-amber-400">My Deck</a>
-				</li>
-			</ul>
-		</nav>
+    <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
+        <span class="text-2xl font-bold text-amber-400">MYTHORIA</span>
+    </a>
 
-	</header>
+    <nav aria-label="Main navigation">
+        <ul class="flex items-center gap-5 text-white">
+            <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+            <li><a href="shop.html" class="hover:text-amber-400">Booster Shop</a></li>
+            <li><a href="opening.html" class="text-amber-400">Opening Chamber</a></li>
+            <li><a href="grimoire.html" class="hover:text-amber-400">My Collection</a></li>
+            <li><a href="deck.html" class="hover:text-amber-400">My Deck</a></li>
+        </ul>
+    </nav>
 
-	<main class=" pt-24 bg-black/70">
-    </main>
+</header>
+
+	<main class="mx-auto max-w-6xl px-6 py-40">
+
+        <section class="mb-12 text-center">
+            <h1 class="mb-3 text-5xl font-bold text-amber-400">
+                Opening Chamber
+            </h1>
+
+            <p class="text-gray-300">
+                Open your boosters and discover legendary cards.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="mb-6 text-2xl font-bold text-amber-400">
+                Your Boosters
+            </h2>
+
+            <div id="boosters-container"
+                 class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            </div>
+        </section>
+
+        <section class="mb-12 text-center">
+            <button id="open-booster"
+                    class="rounded-lg bg-amber-500 px-8 py-3 font-bold text-black hover:bg-amber-400">
+                Ouvrir le booster
+            </button>
+        </section>
+
+        <section>
+            <h2 class="mb-6 text-center text-2xl font-bold text-amber-400">
+                Révélation des cartes
+            </h2>
+
+            <div id="revealed-cards"
+                 class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+            </div>
+        </section>
+		</main>
 </body>
 </html>
