@@ -68,6 +68,7 @@ function displayBoosters() {
 
             const quantity = document.createElement("p");
             quantity.textContent = "Quantity: " + item.quantity;
+            quantity.style.color = "orange";
 
             const button = document.createElement("button");
             button.textContent = "Select";
