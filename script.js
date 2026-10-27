@@ -36,11 +36,11 @@ const boosters = {
     phantom: {
         name: "Phantom Troupe",
         cards: [
-            { id: 16, name: "Phantom Assassin", image: "images/phantom1.png", rarity: "rare" },
-            { id: 17, name: "Shadow Reaper", image: "images/phantom2.png", rarity: "rare" },
-            { id: 18, name: "Night Stalker", image: "images/phantom3.png", rarity: "epic" },
-            { id: 19, name: "Ghost Commander", image: "images/phantom4.png", rarity: "rare" },
-            { id: 20, name: "Void Emperor", image: "images/legend4.png", rarity: "legendary" }
+            { id: 16, name: "Great 1", image: "images/great1.png", rarity: "rare" },
+            { id: 17, name: "Great 2", image: "images/great2.png", rarity: "rare" },
+            { id: 18, name: "Great 3", image: "images/great3.png", rarity: "epic" },
+            { id: 19, name: "Great 4", image: "images/great4.png", rarity: "rare" },
+            { id: 20, name: "Great 5", image: "images/great5.png", rarity: "legendary" }
         ]
     }
 };
@@ -88,6 +88,7 @@ function displayBoosters() {
 
     if (boostersContainer.innerHTML === "") {
         boostersContainer.textContent = "You don't own any boosters yet. Visit the shop!";
+        boostersContainer.style.color = "white";
     }
 }
 
