@@ -1,5 +1,25 @@
-.home-card :hover{
+
+.home-card :hover {
     transform: scale(1.6);
     transition: 0.4s;
+}
 
+.slot {
+    aspect-ratio: 2/3;
+    border: 2px dashed rgba(120, 78, 21, 0.4);
+    border-radius: 8px;
+    background: rgba(245, 232, 200, 0.6);
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 280px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    border: 1px solid rgba(120, 78, 21, 0.4);
+    border-radius: 12px;
+    background: rgba(215, 183, 130, 0.7);
+    color: rgba(110, 70, 20, 0.6);
 }
