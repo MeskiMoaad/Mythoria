@@ -12,15 +12,22 @@
 
 <body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/Sanctuaire\ mystique\ aux\ chandelles.png');">
 
-	 <header class="fixed top-0 left-0 z-50 w-full flex items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
+
+<header class="fixed top-0 left-0 z-50 w-full flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
 
     <a href="index.html" class="flex items-center gap-3 shrink-0">
         <img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
         <span class="text-2xl font-bold text-amber-400">MYTHORIA</span>
     </a>
 
-    <nav aria-label="Main navigation">
-        <ul class="flex items-center gap-5 text-white">
+    <input type="checkbox" id="menu" class="peer hidden">
+
+    <label for="menu" class="cursor-pointer text-3xl text-amber-400 md:hidden">
+        ☰
+    </label>
+
+    <nav class="hidden w-full peer-checked:block md:block md:w-auto" aria-label="Main navigation">
+        <ul class="flex flex-col gap-5 text-white md:flex-row md:items-center md:gap-5">
             <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
             <li><a href="shop.html" class="hover:text-amber-400">Booster Shop</a></li>
             <li><a href="opening.html" class="text-amber-400">Opening Chamber</a></li>

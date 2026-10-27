@@ -16,40 +16,31 @@
     class="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white"
     style="background-image: url('./images/Sanctuaire mystique aux chandelles.png');">
 
-    <header class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-amber-500/30 bg-black px-8 py-4">
+  
+<header class="fixed top-0 left-0 z-50 flex w-full flex-wrap items-center justify-between gap-4 border-b border-amber-500/30 bg-black px-8 py-4">
 
-        <a href="index.html" class="flex items-center gap-3">
-            <img
-                src="images/logo.png"
-                alt="Mythoria logo"
-                class="h-12 w-12 object-contain">
+    <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
+        <span class="text-2xl font-bold text-amber-400">MYTHORIA</span>
+    </a>
 
-            <span class="text-2xl font-bold text-amber-400">
-                MYTHORIA
-            </span>
-        </a>
+    <input type="checkbox" id="menu" class="peer hidden">
 
-        <nav aria-label="Main navigation">
-            <ul class="flex items-center gap-8 text-white">
-                <li>
-                    <a href="index.html" class="hover:text-amber-400">Home</a>
-                </li>
-                <li>
-                    <a href="shop.html" class="hover:text-amber-400">Booster Shop</a>
-                </li>
-                <li>
-                    <a href="openingChamber.html" class="hover:text-amber-400">Opening Chamber</a>
-                </li>
-                <li>
-                    <a href="grimoire.html" class="text-amber-400">My Collection</a>
-                </li>
-                <li>
-                    <a href="deck.html" class="hover:text-amber-400">My Deck</a>
-                </li>
-            </ul>
-        </nav>
+    <label for="menu" class="cursor-pointer text-3xl text-amber-400 md:hidden">
+        ☰
+    </label>
 
-    </header>
+    <nav class="hidden w-full peer-checked:block md:block md:w-auto" aria-label="Main navigation">
+        <ul class="flex flex-col gap-5 text-white md:flex-row md:items-center md:gap-8">
+            <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+            <li><a href="shop.html" class="hover:text-amber-400">Booster Shop</a></li>
+            <li><a href="openingChamber.html" class="hover:text-amber-400">Opening Chamber</a></li>
+            <li><a href="grimoire.html" class="text-amber-400">My Collection</a></li>
+            <li><a href="deck.html" class="hover:text-amber-400">My Deck</a></li>
+        </ul>
+    </nav>
+
+</header>
 
     <main class="mx-auto max-w-7xl px-6 pb-12 pt-28">
 
@@ -59,7 +50,7 @@
 
         <div class="grid gap-6 md:grid-cols-[200px_1fr]">
 
-            <aside class="h-fit rounded-lg border border-amber-700 bg-[#211910]/95 p-4">
+            <div class="h-fit rounded-lg border border-amber-700 bg-[#211910]/95 p-4">
 
                 <h2 class="mb-4 text-xl font-bold text-amber-400">
                     Boosters
@@ -98,7 +89,7 @@
                     </button>
 
                 </div>
-            </aside>
+            </div>
 
             <section class="min-w-0 rounded-lg border border-amber-700/50 bg-black/60 p-4">
 
