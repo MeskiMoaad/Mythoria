@@ -1,48 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-	<title>Mythoria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Deck - Mythoria</title>
 </head>
 
-<body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/eclipse.png');">
-	<header class="fixed top-0 left-0 z-50 w-full  flex items-center justify-between px-8 py-4 bg-black/100 border-b border-amber-500/30 ">
+<body class="min-h-screen bg-gray-950 text-white">
 
-		<a href="index.html" class="flex items-center gap-3">
-			<img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
-			<span class="text-2xl font-bold text-amber-400">
-				MYTHORIA
-			</span>
-		</a>
+    <header class="fixed top-0 left-0 z-50 w-full flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
 
-		<nav aria-label="Main navigation">
-			<ul class="flex items-center gap-8 text-white">
-				<li>
-					<a href="index.html" class="text-amber-400">Home</a>
-				</li>
-				<li>
-					<a href="shop.html" class="hover:text-amber-400">Booster Shop</a>
-				</li>
-				<li>
-					<a href="opening.html" class="hover:text-amber-400">Opening Chamber</a>
-				</li>
-				<li>
-					<a href="grimoire.html" class="hover:text-amber-400">My Collection</a>
-				</li>
-				<li>
-					<a href="deck.html" class="hover:text-amber-400">My Deck</a>
-				</li>
-			</ul>
-		</nav>
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+            <img src="images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
+            <span class="text-2xl font-bold text-amber-400">MYTHORIA</span>
+        </a>
 
-	</header>
+        <input type="checkbox" id="menu" class="peer hidden">
 
-	<main class=" pt-24 bg-black/70">
+        <label for="menu" class="cursor-pointer text-3xl text-amber-400 md:hidden">
+            ☰
+        </label>
+
+        <nav class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col gap-5 text-white md:flex-row md:items-center md:gap-5">
+                <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+                <li><a href="shop.html" class="hover:text-amber-400">Booster Shop</a></li>
+                <li><a href="openingChamber.html" class="hover:text-amber-400">Opening Chamber</a></li>
+                <li><a href="grimoire.html" class="hover:text-amber-400">My Collection</a></li>
+                <li><a href="deck.html" class="text-amber-400">My Deck</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="mx-auto max-w-6xl p-6 pt-28">
+
+        <h1 class="mb-2 text-4xl font-bold text-amber-400">My Deck</h1>
+        <p class="mb-8 text-gray-300">Choose your cards from your Grimoire.</p>
+
+        <section class="mb-10 rounded-xl border border-amber-500/30 bg-black p-5">
+            <h2 class="mb-3 text-2xl font-bold">Deck Statistics</h2>
+            <p>Cards: <span id="deck-count">0</span> / 15</p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="mb-5 text-2xl font-bold text-amber-400">Available Cards</h2>
+            <div id="available-cards" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </section>
+
+        <section>
+            <h2 class="mb-5 text-2xl font-bold text-amber-400">My Selected Deck</h2>
+            <div id="deck-cards" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </section>
 
     </main>
+
+    <script src="deck.js"></script>
 </body>
 </html>
