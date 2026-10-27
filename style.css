@@ -1,5 +1,4 @@
 
-/* Home page booster cards */
 .home-card {
     transition: transform 0.4s ease;
 }
@@ -8,7 +7,6 @@
     transform: scale(1.04);
 }
 
-/* Collection slots */
 .slot {
     aspect-ratio: 2 / 3;
     border: 2px dashed rgba(120, 78, 21, 0.4);
@@ -16,7 +14,6 @@
     background: rgba(245, 232, 200, 0.6);
 }
 
-/* Card image container */
 .card-image {
     display: flex;
     align-items: center;
