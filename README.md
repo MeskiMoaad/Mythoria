@@ -31,10 +31,14 @@
 Mythoria/
 ├── index.html
 ├── shop.html
-├── opening.html
-├── grimoire.html
-├── deck.html
 ├── shop.js
+├── openingChamber.html
+├── script.js
+├── grimoire.html
+├── grimoire.js
+├── deck.html
+├── myDeck.js
+├── style.css
 └── images/
 
 ## Déploiement
