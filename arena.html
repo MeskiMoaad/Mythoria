@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Arena | Mythoria </title>
+        </head>
+        <body
+            class="h-screen overflow-hiden bg-text-white"
+            style="background-image: url('./img/Citadelle\ gothique\ sous\ l’éclipse.png');">
+     
+<header class="fixed top-0 left-0 z-50 w-full flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
+
+    <a href="../index.html" class="flex items-center gap-3 shrink-0">
+        <img src="../images/logo.png" alt="Mythoria logo" class="h-12 w-12 object-contain">
+        <span class="text-2xl font-bold text-amber-400">MYTHORIA</span>
+    </a>
+
+    <input type="checkbox" id="menu" class="peer hidden">
+
+    <label for="menu" class="cursor-pointer text-3xl text-amber-400 md:hidden">
+        ☰
+    </label>
+
+    <nav class="hidden w-full peer-checked:block md:block md:w-auto"
+         aria-label="Main navigation">
+        <ul class="flex flex-col gap-5 text-white md:flex-row md:items-center md:gap-5">
+
+            <li>
+                <a href="../index.html" class="hover:text-amber-400">Home</a>
+            </li>
+
+            <li>
+                <a href="../shop.html" class="hover:text-amber-400">Booster Shop</a>
+            </li>
+
+            <li>
+                <a href="../openingChamber.html" class="hover:text-amber-400">Opening Chamber</a>
+            </li>
+
+            <li>
+                <a href="../grimoire.html" class="hover:text-amber-400">My Collection</a>
+            </li>
+
+            <li>
+                <a href="../deck.html" class="hover:text-amber-400">My Deck</a>
+            </li>
+
+            <li>
+                <a href="arena.html" class="text-amber-400 font-semibold">Arena</a>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<main class="min-h-screen px-4 pt-28 pb-8 text-white md:px-8">
+
+
+    <section class="mb-6 rounded-xl border border-amber-500/30 bg-black/80 p-4">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <h2 class="text-xl font-bold text-red-400">Shadow Lord</h2>
+                <p class="text-sm text-gray-400">Darkness Faction</p>
+            </div>
+
+            <div class="text-right">
+                <p class="text-sm text-gray-400">Opponent HP</p>
+                <p class="text-xl font-bold text-red-400">3000 / 3000</p>
+            </div>
+        </div>
+        <h3 class="mb-3 semi-bold "></h3>
+    </section>
+
+    <section class="mb-4 rounded-xl border border-amber-500/30 bg-black/70 p-4">
+        <h2 class="mb-4 text-center font-semibold text-amber-400">
+            Opponent Battlefield
+        </h2>
+
+        <div class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+
+        </div>
+    </section>
+
+
+    <section >
+        <h2 class="mb-4 text-center font-semibold text-amber-400">
+            Your Battlefield
+        </h2>
+
+        <div class="grid grid-cols-5 gap-2">
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+            <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+        </div>
+    </section>
+
+    <section >
+        <div class="mb-4 flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <h2 class="text-xl font-bold text-amber-400"> Walter</h2>
+                <p class="text-sm text-gray-400">Light Faction</p>
+            </div>
+
+            <div class="text-right">
+                <p class="text-sm text-gray-400">Your HP</p>
+                <p class="text-xl font-bold text-green-400">3000 / 3000</p>
+            </div>
+        </div>
+
+        <h3 class="mb-3 font-semibold">Your Hand <span class="text-gray-400">(5 cards)</span></h3>
+
+        <div class="grid grid-cols-3 gap-3 sm:grid-cols-5">
+            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+        </div>
+    </section>
+
+</main>
+
+        </body>
+
+</html>
