@@ -9,3 +9,11 @@ const cardsCollection = Object.values(boosters).flatMap(
 function createDeck(player) {
     player.deck = cardsCollection.map(card => ({ ...card }));
 }
+function drawCard(player) {
+    if (player.hand.length >= 5)
+        return;
+    if (player.deck.length === 0)
+        return;
+    const card = player.deck.shift();
+    player.hand.push(card);
+}
