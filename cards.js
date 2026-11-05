@@ -21,7 +21,23 @@ function drawCard(player) {
 
     return card;
 }
+function updateHand() {
+    const player = gameState.players.player;
+    const slots = document.querySelectorAll(".player-card");
 
+    slots.forEach((slot, index) => {
+        const card = player.hand[index];
+
+        if (card) {
+            slot.innerHTML = `
+                <img src="${card.image}"
+                     class="w-full h-full object-cover rounded-lg">
+            `;
+        } else {
+            slot.innerHTML = "";
+        }
+    });
+}
 function summonCard(player, cardId) {
     const index = player.hand.findIndex(card => card.id === cardId);
 
@@ -40,14 +56,6 @@ function initializeCards() {
         drawCard(gameState.players.opponent);
     }
 
-    const slots = document.querySelectorAll(".player-card");
-
-    for (let i = 0; i < gameState.players.player.hand.length; i++) {
-        const card = gameState.players.player.hand[i];
-
-        slots[i].innerHTML = `
-            <img src="${card.image}" class="w-full h-full object-cover rounded-lg">
-        `;
-    }
+    updateHand();
 }
-export { createDeck, drawCard, summonCard, initializeCards };
+export { createDeck, drawCard, summonCard, initializeCards, updateHand };
