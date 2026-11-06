@@ -49,4 +49,36 @@ const boosters = {
     }
 };
 
+function addStats(card) {
+    let attack;
+    let defense;
+
+    if (card.rarity === "standard") {
+        attack = 200;
+        defense = 300;
+    } else if (card.rarity === "rare") {
+        attack = 400;
+        defense = 500;
+    } else if (card.rarity === "epic") {
+        attack = 600;
+        defense = 700;
+    } else if (card.rarity === "legendary") {
+        attack = 1000;
+        defense = 1000;
+    }
+
+    return {
+        ...card,
+        attack,
+        defense,
+        currentDefense: defense,
+        hasAttacked: false
+    };
+};
+
+Object.values(boosters).forEach(booster => {
+    booster.cards = booster.cards.map(addStats);
+});
+
+
 export default boosters;
