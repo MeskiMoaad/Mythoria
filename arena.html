@@ -7,7 +7,7 @@
         <title>Arena | Mythoria </title>
         </head>
         <body
-            class="h-screen overflow-hiden bg-text-white"
+            class="h-screen bg-text-white"
             style="background-image: url('./img/Citadelle\ gothique\ sous\ l’éclipse.png');">
      
 <header class="fixed top-0 left-0 z-50 w-full flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-black/90 border-b border-amber-500/30">
@@ -28,23 +28,23 @@
         <ul class="flex flex-col gap-5 text-white md:flex-row md:items-center md:gap-5">
 
             <li>
-                <a href="../index.html" class="hover:text-amber-400">Home</a>
+                <a href="index.html" class="hover:text-amber-400">Home</a>
             </li>
 
             <li>
-                <a href="../shop.html" class="hover:text-amber-400">Booster Shop</a>
+                <a href="shop.html" class="hover:text-amber-400">Booster Shop</a>
             </li>
 
             <li>
-                <a href="../openingChamber.html" class="hover:text-amber-400">Opening Chamber</a>
+                <a href="openingChamber.html" class="hover:text-amber-400">Opening Chamber</a>
             </li>
 
             <li>
-                <a href="../grimoire.html" class="hover:text-amber-400">My Collection</a>
+                <a href="grimoire.html" class="hover:text-amber-400">My Collection</a>
             </li>
 
             <li>
-                <a href="../deck.html" class="hover:text-amber-400">My Deck</a>
+                <a href="deck.html" class="hover:text-amber-400">My Deck</a>
             </li>
 
             <li>
@@ -62,13 +62,44 @@
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_130px]">
 
         <div class="min-w-0">
+            <section id="game-setup" class="mb-6 rounded-xl border border-amber-500/30 bg-black/90 p-6 text-center">
 
-            <!-- OPPONENT INFO -->
+    <h2 class="mb-4 text-xl font-bold text-amber-400">
+        Determine Your Faction
+    </h2>
+
+    <p id="coin-result" class="mb-4">
+        Flip the coin to determine who starts.
+    </p>
+
+    <button id="flip-coin"
+        class="rounded-lg bg-amber-500 px-6 py-2 font-bold text-black">
+        Flip Coin
+    </button>
+
+    <div id="faction-selection" class="mt-4 hidden">
+
+        <p class="mb-3">Choose your faction:</p>
+
+        <button data-faction="light"
+            class="rounded-lg bg-amber-500 px-5 py-2 text-black">
+            Light
+        </button>
+
+        <button data-faction="dark"
+            class="rounded-lg bg-purple-700 px-5 py-2">
+            Darkness
+        </button>
+
+    </div>
+
+</section>
+
             <section class="mb-6 rounded-xl border border-amber-500/30 bg-black/80 p-4">
                 <div class="flex flex-wrap items-center justify-between gap-4">
                     <div>
                         <h2 class="text-xl font-bold text-red-400">Shadow Lord</h2>
-                        <p class="text-sm text-gray-400">Darkness Faction</p>
+                        <p id ="opponent-fraction" class="text-sm text-gray-400">Darkness Faction</p>
                     </div>
 
                     <div class="text-right">
@@ -78,11 +109,11 @@
                 </div>
 
                  <div class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="opponent-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="opponent-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="opponent-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="opponent-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+            <div class="opponent-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
         </div>
             </section>
 
@@ -92,16 +123,16 @@
                 </h2>
 
                  <div class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="opponent-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
                 </div>
             </section>
 
@@ -111,24 +142,24 @@
                 </h2>
 
                 <div class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
-                    <div class="aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
+                    <div class="player-battle-slot aspect-[3/4] rounded-lg border border-dashed border-gray-600 bg-white/5"></div>
                 </div>
             </section>
 
             <section class="rounded-xl border border-amber-500/30 bg-black/80 p-4">
                 <div class="mb-4 flex flex-wrap items-center justify-between gap-4">
                     <div>
-                        <h2 class="text-xl font-bold text-amber-400">Akira</h2>
-                        <p class="text-sm text-gray-400">Light Faction</p>
+                        <h2 class="text-xl font-bold text-green-400">knight watch</h2>
+                        <p id ="player-fraction" class="text-sm text-gray-400">Light Faction</p>
                     </div>
 
                     <div class="text-right">
@@ -140,49 +171,53 @@
                 <h3 class="mb-3 font-semibold">
                     Your Hand <span class="text-gray-400">(5 cards)</span>
                 </h3>
-
-             <div class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-            <div class="aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
-        </div>
-            </section>
-
-        </div>
-
-        <div  class="flex flex-row gap-3 lg:flex-col">
-
-            <section class="flex-1 rounded-xl border border-amber-500/30 bg-black/80 p-3">
-                 <h2 class="mb-3 text-center text-sm font-semibold text-amber-400">
-                    Openant Deck
-                </h2>
-
-                <div class="mx-auto w-16 aspect-[3/4] rounded-lg border-2 border-amber-500/50 bg-gradient-to-b from-gray-800 to-black flex items-center justify-center">
-                    <span class="text-xs font-bold text-amber-400">MYTHORIA</span>
-                    
-                </div>
                 
-            </section>
 
-            <section class="flex-1 rounded-xl border border-amber-500/30 bg-black/80 p-3">
-                <h2 class="mb-3 text-center text-sm font-semibold text-amber-400">
-                    Your Deck
-                </h2>
+                
+                <div id="player-hand" class="grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-3">
+                 <div class="player-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
 
-                <div class="mx-auto w-16 aspect-[3/4] rounded-lg border-2 border-amber-500 bg-gradient-to-b from-gray-800 to-black flex items-center justify-center">
-                    <span class="text-xs font-bold text-amber-400">MYTHORIA</span>
-                </div>
+                    <div class="player-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
 
+                    <div class="player-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
 
-                </button>
-            </section>
+                    <div class="player-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
 
+                    <div class="player-card aspect-[3/4] rounded-lg border border-amber-500/40 bg-gradient-to-b from-gray-800 to-black"></div>
+    
         </div>
+            </section>
+        </div>
+
+      <div class="flex flex-row gap-3 lg:flex-col">
+
+    <section class="flex-1 rounded-xl border border-amber-500/30 bg-black/80 p-3">
+        <h2 class="mb-3 text-center text-sm font-semibold text-amber-400">
+            Opponent Deck
+        </h2>
+
+        <div class="mx-auto w-16 aspect-[3/4] rounded-lg border-2 border-amber-500/50 bg-gradient-to-b from-gray-800 to-black flex items-center justify-center">
+            <span class="text-xs font-bold text-amber-400">MYTHORIA</span>
+        </div>
+    </section>
+
+   
+    <section class="flex-1 rounded-xl border border-amber-500/30 bg-black/80 p-3">
+        <h2 class="mb-3 text-center text-sm font-semibold text-amber-400">
+            Your Deck
+        </h2>
+
+        <button id="draw-cards" type="button"
+            class="mx-auto w-16 aspect-[3/4] rounded-lg border-2 border-amber-500 bg-gradient-to-b from-gray-800 to-black flex items-center justify-center cursor-pointer hover:border-amber-300 hover:scale-105 transition">
+            <span class="text-xs font-bold text-amber-400">MYTHORIA</span>
+        </button>
+    </section>
+
+</div>
 
     </div>
-
+    
 </main>
+<script type="module" src="main.js"></script>
     </body>
 </html>
