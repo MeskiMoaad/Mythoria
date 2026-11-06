@@ -4,9 +4,9 @@ import {
     initializeCards,
     drawCard,
     updateHand,
-    updateOpponentHand,
-   
 } from "./cards.js";
+
+import { opponentTurn } from "./opponent.js";
 
 initializeCards();
 
@@ -15,7 +15,10 @@ const deckButton = document.querySelector("#draw-cards");
 deckButton.addEventListener("click", function () {
     drawCard(gameState.players.player);
     updateHand();
-    updateOpponentHand()
+});
+
+document.addEventListener("player-summoned", () => {
+    setTimeout(opponentTurn, 1500);
 });
 
 console.log("Player", gameState.players.player);
